@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+# MYSQL DB Connection
+spring:
+  application:
+    name: messaging-app
+  jpa:
+    hibernate:
+      ddl-auto : update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/e_com_db
+    username: root
+    password: password
+
